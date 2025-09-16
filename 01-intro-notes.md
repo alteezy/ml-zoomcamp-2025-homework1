@@ -23,7 +23,7 @@ This framework provides a systematic way to approach any ML project, ensuring yo
 
 ## Hands-On Learning: Working with Real Data
 
-The homework assignment was particularly valuable because it involved working with a **car fuel efficiency dataset** containing 9,704 records with features like:
+The homework assignment was particularly valuable because it involved working with a **car fuel efficiency dataset** with features like:
 - Engine displacement
 - Number of cylinders
 - Horsepower
@@ -49,7 +49,7 @@ missing_values = df.isnull().sum()
 columns_with_missing = (missing_values > 0).sum()
 ```
 
-We discovered that 4 out of 11 columns had missing values, highlighting the importance of data quality assessment.
+The homework revealed that several columns contained missing values, highlighting the importance of data quality assessment in real-world datasets.
 
 ### Statistical Analysis
 ```python
@@ -58,7 +58,7 @@ asia_cars = df[df['origin'] == 'Asia']
 max_efficiency = asia_cars['fuel_efficiency_mpg'].max()
 ```
 
-Asian cars showed the highest fuel efficiency at 23.76 MPG, demonstrating how data can reveal interesting insights.
+Analyzing different car origins revealed interesting patterns in fuel efficiency, demonstrating how data can provide valuable insights for decision-making.
 
 ### Linear Algebra Applications
 The most challenging part involved matrix operations—creating feature matrices, computing transposes, and matrix inversions. This reinforced that machine learning isn't just about calling library functions; understanding the mathematical foundations is crucial.
